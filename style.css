@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: url(./img/fondo.png);
+    background-color: #312ac6;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+header{
+    padding: 40px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 100px auto;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.img-logo{
+    width: 60%;
+    padding-right: 30%;
+}
+
+.txt{
+    flex-direction: column;
+}
+.txt h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+.txt p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400 ;
+
+}
+.txt h1, p{
+    padding-bottom: 60px;
+    color: #fff;
+}
+.txt button{
+    width: 150px;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #312ac6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    box-shadow: 3px 3px rgb(15, 15, 15);
+}
+.icons-container{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+i{
+    color: #fff;
+    padding: 10px;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 800px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .txt{
+        text-align: center;
+    }
+    .icons-container{
+        width: 50%;
+        justify-content: space-between;
+        margin: auto;
+    }
+}
+
